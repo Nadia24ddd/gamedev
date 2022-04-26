@@ -1,0 +1,46 @@
+#include "character.h"
+#include "prop.h"
+
+void    collision_house(float colision_tile)
+{
+    Prop props[38]{
+        Prop{Vector2{colision_tile * 3.0f, colision_tile * 2.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 3.0f, colision_tile}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 3.0f, 0.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 2.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 3.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 4.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 5.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 6.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 7.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 2.0f, colision_tile * 8.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 1.0f, colision_tile * 2.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 1.0f, colision_tile * 3.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 1.0f, colision_tile * 7.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 1.0f, colision_tile * 8.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 3.0f, colision_tile * 8.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 4.0f, colision_tile * 9.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 5.0f, colision_tile * 9.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 6.0f, colision_tile * 11.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 5.0f, colision_tile * 10.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 7.0f, colision_tile * 10.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 8.0f, colision_tile * 9.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 9.0f, colision_tile * 10.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 10.0f, colision_tile * 10.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 10.0f, colision_tile * 9.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 10.0f, colision_tile * 8.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 10.0f, colision_tile * 11.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 11.0f, colision_tile * 8.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 12.0f, colision_tile * 9.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 13.0f, colision_tile * 9.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 8.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 7.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 6.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 5.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 4.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 3.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 14.0f, colision_tile * 2.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 13.0f, colision_tile * 1.0f}, LoadTexture("test_collision.png")},
+        Prop{Vector2{colision_tile * 13.0f, colision_tile * 0.0f}, LoadTexture("test_collision.png")},
+    };
+}
