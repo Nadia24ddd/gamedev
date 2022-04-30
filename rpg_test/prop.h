@@ -6,15 +6,15 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 21:32:12 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/04/25 11:23:14 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/04/30 01:18:26 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PROP_H
 # define PROP_H
 
-#include <raylib.h>
-#include <raymath.h>
+# include <raylib.h>
+# include <raymath.h>
 
 class Prop
 {

@@ -3,8 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:/raylib/raylib/src/**",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:\\Users\\14182\\Desktop\\42_git\\gamedev\\rpg_test\\raylib"
             ],
             "defines": [
                 "_DEBUG",
