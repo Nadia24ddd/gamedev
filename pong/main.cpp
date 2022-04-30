@@ -1,16 +1,13 @@
 #include <raylib.h>
+#include "pong.h"
 
 //Variable globales
-int 	circle_x = 		600;
-int 	circle_y = 		400;
-int 	p1_x = 			10;
-int 	p1_y = 			350;
-int 	p2_x = 			1175;
-int 	p2_y = 			350;
-int		move_p1_y_max = 450;
-int		move_p1_y_min = 350;
-int 	move_p2_y_max = 450;
-int 	move_p2_y_min = 350;
+int 	circle_x = 		600;		// Position ball x
+int 	circle_y = 		400;		// Position ball y
+Vector2 p1{10.0f, 350.0f};			// Pos x P1
+Vector2	p2 {1175.0f, 350.0f};		// Pos x P2
+MaxMin	move_p1 {450.0f, 350.0f};	// Limits Y collision P1
+MaxMin move_p2{450.0f, 350.0f};		// Limits Y collision P2
 int		ct = 			-1;
 int		ct_start = 		0;
 float	ct_down = 	0;
@@ -67,29 +64,29 @@ int main()
 
 void	playeur_ctrl(void)
 {
-	if (IsKeyDown(KEY_W) && p1_y >= 8)
+	if (IsKeyDown(KEY_W) && p1.y >= 8)
 	{
-		p1_y -= 5;
-		move_p1_y_max -= 5;
-		move_p1_y_min -= 5;
+		p1.y -= 5;
+		move_p1.max -= 5;
+		move_p1.min -= 5;
 	}
-	if (IsKeyDown(KEY_S) && p1_y <= 690)
+	if (IsKeyDown(KEY_S) && p1.y <= 690)
 	{
-		p1_y += 5;
-		move_p1_y_min += 5;
-		move_p1_y_max += 5;
+		p1.y += 5;
+		move_p1.min += 5;
+		move_p1.max += 5;
 	}
-	if (IsKeyDown(KEY_UP) && p2_y >= 8)
+	if (IsKeyDown(KEY_UP) && p2.y >= 8)
 	{
-		p2_y -= 5;
-		move_p2_y_max -= 5;
-		move_p2_y_min -= 5;
+		p2.y -= 5;
+		move_p2.max -= 5;
+		move_p2.min -= 5;
 	}
-	if (IsKeyDown(KEY_DOWN) && p2_y <= 690)
+	if (IsKeyDown(KEY_DOWN) && p2.y <= 690)
 	{
-		p2_y += 5;
-		move_p2_y_max += 5;
-		move_p2_y_min += 5;
+		p2.y += 5;
+		move_p2.max += 5;
+		move_p2.min += 5;
 	}
 }
 
@@ -135,8 +132,8 @@ void 	draw_start(Texture2D background)
 	ClearBackground(GetColor(0x052c46ff));
 	DrawTexture(background, 0, 0, WHITE);
 	DrawCircle(circle_x, circle_y, 15, RED);
-	DrawRectangle(p1_x, p1_y, 15, 100, RED); // p1
-	DrawRectangle(p2_x, p2_y, 15, 100, RED); // p2
+	DrawRectangle(p1.x, p1.y, 15, 100, RED); // p1
+	DrawRectangle(p2.x, p2.y, 15, 100, RED); // p2
 }
 
 void 	draw_end(int point_p1, int point_p2)
@@ -149,7 +146,7 @@ void 	draw_end(int point_p1, int point_p2)
 
 void	game_logic_p1(void)
 {
-	if ((circle_x >= 10 && circle_x <= 30) && (circle_y >= move_p1_y_min && circle_y <= move_p1_y_max))
+	if ((circle_x >= 10 && circle_x <= 30) && (circle_y >= move_p1.min && circle_y <= move_p1.max))
 	{
 		move_on_hit();
 		ct = 1;
@@ -175,7 +172,7 @@ void	game_logic_p1(void)
 
 void game_logic_p2(void)
 {
-	if ((circle_x >= 1170 && circle_x <= 1190) && (circle_y >= move_p2_y_min && circle_y <= move_p2_y_max))
+	if ((circle_x >= 1170 && circle_x <= 1190) && (circle_y >= move_p2.min && circle_y <= move_p2.max))
 	{
 		move_on_hit();
 		ct = -1;
