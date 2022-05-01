@@ -2,8 +2,9 @@
 #include "pong.h"
 
 //Variable globales
-int 	circle_x = 		600;		// Position ball x
-int 	circle_y = 		400;		// Position ball y
+Vector2 ball {600.0f, 400.0f};
+// int 	circle_x = 		600;		// Position ball x
+// int 	circle_y = 		400;		// Position ball y
 Vector2 p1{10.0f, 350.0f};			// Pos x P1
 Vector2	p2 {1175.0f, 350.0f};		// Pos x P2
 MaxMin	move_p1 {450.0f, 350.0f};	// Limits Y collision P1
@@ -34,26 +35,22 @@ int main()
 	while (!IsKeyDown(KEY_ESCAPE))
 	{
 		draw_start(background);
+		playeur_ctrl();
 		if (IsKeyPressed(KEY_SPACE))
 			ct_start = 1;
 
 		//Count points
-		if (circle_x == -50)
+		if (ball.x == -50)
 			point_p2 += 1;
-		if (circle_x == 1250)
+		if (ball.x == 1250)
 			point_p1 += 1;
 
 		// Game logic begin
 		if (ct == -1) //P1
-		{
 			game_logic_p1();
-			playeur_ctrl();
-		}
 		if (ct == 1) //P2
-		{
 			game_logic_p2();
-			playeur_ctrl();
-		}
+
 		if (ct_start == 0)
 			DrawText("Press space to begin", 400, 300, 40, RED);
 		draw_end(point_p1, point_p2);
@@ -120,9 +117,9 @@ void	move_on_hit(void)
 
 void	restart_game(void)
 {
-	circle_x = 600;
+	ball.x = 600;
 	ct_down = 0;
-	circle_y = 400;
+	ball.y = 400;
 	ct_start = 0;
 }
 
@@ -131,7 +128,7 @@ void 	draw_start(Texture2D background)
 	BeginDrawing();
 	ClearBackground(GetColor(0x052c46ff));
 	DrawTexture(background, 0, 0, WHITE);
-	DrawCircle(circle_x, circle_y, 15, RED);
+	DrawCircle(ball.x, ball.y, 15, RED);
 	DrawRectangle(p1.x, p1.y, 15, 100, RED); // p1
 	DrawRectangle(p2.x, p2.y, 15, 100, RED); // p2
 }
@@ -146,7 +143,7 @@ void 	draw_end(int point_p1, int point_p2)
 
 void	game_logic_p1(void)
 {
-	if ((circle_x >= 10 && circle_x <= 30) && (circle_y >= move_p1.min && circle_y <= move_p1.max))
+	if ((ball.x >= 10 && ball.x <= 30) && (ball.y >= move_p1.min && ball.y <= move_p1.max))
 	{
 		move_on_hit();
 		ct = 1;
@@ -154,25 +151,25 @@ void	game_logic_p1(void)
 
 	// Deplacement horizontale
 	if (ct_start == 1)
-		circle_x = circle_x - 10;
+		ball.x = ball.x - 10;
 
-	if (circle_x < -200)
+	if (ball.x < -200)
 		restart_game();
 
 	// Move balle up/down logic
 	if (ct_down != 0)
-		circle_y += ct_down;
+		ball.y += ct_down;
 
 	// Collision haut/bas
-	if (circle_y > 792)
+	if (ball.y > 792)
 		ct_down *= -1;
-	else if (circle_y < 8)
+	else if (ball.y < 8)
 		ct_down *= -1;
 }
 
 void game_logic_p2(void)
 {
-	if ((circle_x >= 1170 && circle_x <= 1190) && (circle_y >= move_p2.min && circle_y <= move_p2.max))
+	if ((ball.x >= 1170 && ball.x <= 1190) && (ball.y >= move_p2.min && ball.y <= move_p2.max))
 	{
 		move_on_hit();
 		ct = -1;
@@ -180,18 +177,18 @@ void game_logic_p2(void)
 
 	// Deplacement horizontale
 	if (ct_start == 1)
-		circle_x = circle_x + 10;
+		ball.x = ball.x + 10;
 
-	if (circle_x > 1400)
+	if (ball.x > 1400)
 		restart_game();
 
 	// Move balle up/down logic
 	if (ct_down != 0)
-		circle_y += ct_down;
+		ball.y += ct_down;
 
 	// Collision haut/bas
-	if (circle_y > 792)
+	if (ball.y > 792)
 		ct_down *= -1;
-	else if (circle_y < 8)
+	else if (ball.y < 8)
 		ct_down *= -1;
 }
