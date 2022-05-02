@@ -1,14 +1,12 @@
-#include <raylib.h>
+#include </Users/nadesjar/Desktop/42_git/gamedev/raylib-4.0.0/src/raylib.h>
 #include "pong.h"
 
 //Variable globales
-Vector2 ball {600.0f, 400.0f};
-// int 	circle_x = 		600;		// Position ball x
-// int 	circle_y = 		400;		// Position ball y
+Vector2 ball{600.0f, 400.0f};
 Vector2 p1{10.0f, 350.0f};			// Pos x P1
-Vector2	p2 {1175.0f, 350.0f};		// Pos x P2
-MaxMin	move_p1 {450.0f, 350.0f};	// Limits Y collision P1
-MaxMin move_p2{450.0f, 350.0f};		// Limits Y collision P2
+Vector2	p2{1175.0f, 350.0f};		// Pos x P2
+MaxMin	move_p1{450.0f, 350.0f};	// Limits Y collision P1
+MaxMin	move_p2{450.0f, 350.0f};		// Limits Y collision P2
 int		ct = 			-1;
 int		ct_start = 		0;
 float	ct_down = 	0;
@@ -128,7 +126,7 @@ void 	draw_start(Texture2D background)
 	BeginDrawing();
 	ClearBackground(GetColor(0x052c46ff));
 	DrawTexture(background, 0, 0, WHITE);
-	DrawCircle(ball.x, ball.y, 15, RED);
+	DrawCircle(ball.x, ball.y, 15, RED);     // ball
 	DrawRectangle(p1.x, p1.y, 15, 100, RED); // p1
 	DrawRectangle(p2.x, p2.y, 15, 100, RED); // p2
 }

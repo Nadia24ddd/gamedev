@@ -6,13 +6,13 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 21:40:55 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/04/30 11:23:01 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/05/02 14:24:31 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "prop.h"
 
-Prop::Prop(Vector2 pos, Texture2D tex):
+Prop::Prop(Vector2 pos, Texture2D tex) :
 	world_pos(pos),
 	texture(tex)
 {

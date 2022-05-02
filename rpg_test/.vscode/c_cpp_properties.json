@@ -22,7 +22,7 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/homebrew/include"
+                "/Users/nadesjar/Desktop/42_git/gamedev/raylib-4.0.0/src"
             ],
             "defines": [
                 "_DEBUG",

@@ -13,8 +13,8 @@
 #ifndef CHARACTER_H
 # define CHARACTER_H
 
-#include <raylib.h>
-#include <raymath.h>
+# include <raylib.h>
+# include <raymath.h>
 
 void    collision_house(float colision_tile);
 
