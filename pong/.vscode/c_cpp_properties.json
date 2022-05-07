@@ -44,7 +44,8 @@
             "name": "Linux",
             "includePath": [
                 "/home/linuxbrew/.linuxbrew/include",
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/home/dracken24/Desktop/prog/gamedev/raylib-4.0.0/src"
             ],
             "defines": [
                 "_DEBUG",

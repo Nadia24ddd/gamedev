@@ -384,11 +384,11 @@ int main(void)
 		map_pos = Vector2Scale(sword_man.Get_world_pos(), -1.0f);
 		DrawTextureEx(map_01, map_pos, 0.0f, map_scale, WHITE);
 		
-		//Props texture
-		// for (auto prop : props) // Do on each props
-		// {
-		// 	prop.Render(sword_man.Get_world_pos());
-		// }
+		// Props texture
+		for (auto prop : props) // Do on each props
+		{
+			prop.Render(sword_man.Get_world_pos());
+		}
 
 		// Draw map
 		sword_man.Tick(GetFrameTime());

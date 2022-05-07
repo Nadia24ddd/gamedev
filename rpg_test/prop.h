@@ -6,15 +6,15 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 15:08:33 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/05/02 15:36:08 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/05/06 23:22:27 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PROP_H
 # define PROP_H
 
-#include </Users/nadesjar/Desktop/42_git/gamedev/raylib-4.0.0/src/raylib.h>
-#include </Users/nadesjar/Desktop/42_git/gamedev/raylib-4.0.0/src/raymath.h>
+#include <raylib.h>
+#include <raymath.h>
 
 class Prop
 {

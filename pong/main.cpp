@@ -1,4 +1,4 @@
-#include </Users/nadesjar/Desktop/42_git/gamedev/raylib-4.0.0/src/raylib.h>
+#include <raylib.h>
 #include "pong.h"
 
 //Variable globales
