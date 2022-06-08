@@ -1,0 +1,857 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make game
+ 
+# make[1]: Entering directory '/home/dracken24/Desktop/prog/gamedev/pong'
+ 
+make[1]: *** No rule to make target 'main.c', needed by 'game'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu May 19 11:48:35 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 372)
+SRC = $(call rwildcard, *.c, *.h)
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# makefile (from 'Makefile', line 27)
+PROJECT_NAME = game
+# makefile (from 'Makefile', line 75)
+UNAMEOS = $(shell uname)
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-750b31c3-74b0-469c-862e-112754a744e0.sock
+# makefile (from 'Makefile', line 368)
+SRC_DIR = src
+# makefile (from 'Makefile', line 77)
+PLATFORM_OS = LINUX
+# environment
+VSCODE_CWD = /home/dracken24
+# makefile (from 'Makefile', line 49)
+RAYLIB_INSTALL_PATH = $(DESTDIR)/lib
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 28)
+RAYLIB_VERSION = 3.0.0
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 51)
+RAYLIB_H_INSTALL_PATH = $(DESTDIR)/include
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# makefile (from 'Makefile', line 369)
+OBJ_DIR = obj
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/dracken24/Desktop/prog/gamedev/pong
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/dracken24
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/dracken24/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.13MFM1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrRw
+# makefile
+CURDIR := /home/dracken24/Desktop/prog/gamedev/pong
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrRw
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 109)
+RAYLIB_PATH = $(realpath $(RAYLIB_PREFIX))
+# environment
+WAYLAND_DISPLAY = wayland-0
+# makefile (from 'Makefile', line 61)
+USE_EXTERNAL_GLFW = FALSE
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/dracken24/.oh-my-zsh
+ 
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 4732
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 48)
+DESTDIR = /usr/local
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 33)
+COMPILER_PATH = C:/raylib/w64devkit/bin
+# environment
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2344,unix/Dracken24:/tmp/.ICE-unix/2344
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 108)
+RAYLIB_PREFIX = ..
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 132)
+RAYLIB_RELEASE_PATH = $(RAYLIB_PATH)/src
+# makefile (from 'Makefile', line 37)
+PLATFORM = PLATFORM_DESKTOP
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 374)
+OBJS = main.c
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := game
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 1
+# makefile (from 'Makefile', line 181)
+MAKE = make
+# environment
+SNAP_COOKIE = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_CA:en
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/dracken24/snap/code/common
+# makefile (from 'Makefile', line 323)
+LDLIBS = -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+# environment
+SNAP = /snap/code/97
+# environment
+INVOCATION_ID = c50fecd56f9040bd9de131995489c538
+# environment
+SNAP_REVISION = 97
+# environment
+SNAP_REAL_HOME = /home/dracken24
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = dracken24
+# environment
+GNOME_SETUP_DISPLAY = :1
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = dracken24
+ 
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 29)
+RAYLIB_API_VERSION = 300
+# environment
+SYSTEMD_EXEC_PID = 2369
+# environment
+DISPLAY = :0
+# environment
+USER = dracken24
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/97
+# environment
+SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
+# makefile (from 'Makefile', line 299)
+LDFLAGS = -L. -L$(RAYLIB_INSTALL_PATH) -L$(RAYLIB_RELEASE_PATH)
+# environment
+MANAGERPID = 2063
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4694
+# environment
+PAGER = less
+# makefile (from 'Makefile', line 146)
+EXAMPLE_RUNTIME_PATH = $(RAYLIB_RELEASE_PATH)
+# environment
+_ = /snap/code/97/usr/share/code/code
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 216)
+CFLAGS = -Wall -std=c++14 -D_DEFAULT_SOURCE -Wno-missing-braces -s -O1 -D_DEFAULT_SOURCE
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# makefile (from 'Makefile', line 382)
+MAKEFILE_PARAMS = $(PROJECT_NAME)
+# environment
+JOURNAL_STREAM = 8:40186
+# makefile (from 'Makefile', line 65)
+USE_WAYLAND_DISPLAY = FALSE
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/dracken24
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 57)
+BUILD_MODE = RELEASE
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-fa98f921-1.67.2-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = c3511e6c
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 54)
+RAYLIB_LIBTYPE = STATIC
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 150)
+CC = g++
+# environment
+SNAP_USER_DATA = /home/dracken24/snap/code/97
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 274)
+INCLUDE_PATHS = -I$(RAYLIB_H_INSTALL_PATH) -isystem. -isystem$(RAYLIB_PATH)/src -isystem$(RAYLIB_PATH)/release/include -isystem$(RAYLIB_PATH)/src/external
+# environment
+GDMSESSION = ubuntu
+# makefile (from 'Makefile', line 365)
+rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subst *,%,$2),$d))
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=153/1024=15%, Rehash=0, Collisions=10/301=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/dracken24/Desktop/prog/gamedev/src: could not be stat'd.
+# src: could not be stat'd.
+# /opt/homebrew/include: could not be stat'd.
+# . (device 66308, inode 3280323): 15 files, no impossibilities.
+# /opt/homebrew/lib: could not be stat'd.
+
+# 15 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c
+#  recipe to execute (from 'Makefile', line 398):
+	$(CC) -c $< -o $@ $(CFLAGS) $(INCLUDE_PATHS) -D$(PLATFORM)
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+game: main.c
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 392):
+	$(CC) -o $(PROJECT_NAME)$(EXT) $(OBJS) $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 20:16:49.581516228
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 407):
+	find -type f -executable | xargs file -i | grep -E 'x-object|x-archive|x-sharedlib|x-executable' | rev | cut -d ':' -f 2- | rev | xargs rm -fv
+	@echo Cleaning done
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 388):
+	$(MAKE) $(MAKEFILE_PARAMS)
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/24=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 30 / storage = 339 B / avg = 11 B
+# current buf: size = 8162 B / used = 339 B / count = 30 / avg = 11 B
+
+# strcache performance: lookups = 41 / hit rate = 26%
+# hash-table stats:
+# Load=30/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Thu May 19 11:48:35 2022
+
+# make[1]: Leaving directory '/home/dracken24/Desktop/prog/gamedev/pong'
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu May 19 11:48:35 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 372)
+SRC = $(call rwildcard, *.c, *.h)
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+SNAP_INSTANCE_KEY = 
+# makefile (from 'Makefile', line 27)
+PROJECT_NAME = game
+# makefile (from 'Makefile', line 75)
+UNAMEOS = $(shell uname)
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-750b31c3-74b0-469c-862e-112754a744e0.sock
+# makefile (from 'Makefile', line 368)
+SRC_DIR = src
+# makefile (from 'Makefile', line 77)
+PLATFORM_OS = LINUX
+# environment
+VSCODE_CWD = /home/dracken24
+# makefile (from 'Makefile', line 49)
+RAYLIB_INSTALL_PATH = $(DESTDIR)/lib
+# default
+MAKE_COMMAND := make
+# makefile (from 'Makefile', line 28)
+RAYLIB_VERSION = 3.0.0
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 51)
+RAYLIB_H_INSTALL_PATH = $(DESTDIR)/include
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+SNAP_INSTANCE_NAME = code
+# makefile (from 'Makefile', line 369)
+OBJ_DIR = obj
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/dracken24/Desktop/prog/gamedev/pong
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+XDG_DATA_DIRS = /usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+OLDPWD = /home/dracken24
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/dracken24/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.13MFM1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/dracken24/Desktop/prog/gamedev/pong
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 109)
+RAYLIB_PATH = $(realpath $(RAYLIB_PREFIX))
+# environment
+WAYLAND_DISPLAY = wayland-0
+# makefile (from 'Makefile', line 61)
+USE_EXTERNAL_GLFW = FALSE
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+SNAP_REEXEC = 
+ 
+make: *** [Makefile:388: all] Error 2
+
+# automatic
+@F = $(notdir $@)
+# environment
+ZSH = /home/dracken24/.oh-my-zsh
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 4732
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 48)
+DESTDIR = /usr/local
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 33)
+COMPILER_PATH = C:/raylib/w64devkit/bin
+# environment
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2344,unix/Dracken24:/tmp/.ICE-unix/2344
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 108)
+RAYLIB_PREFIX = ..
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 132)
+RAYLIB_RELEASE_PATH = $(RAYLIB_PATH)/src
+# makefile (from 'Makefile', line 37)
+PLATFORM = PLATFORM_DESKTOP
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 374)
+OBJS = main.c
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# makefile (from 'Makefile', line 181)
+MAKE = make
+# environment
+SNAP_COOKIE = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = en_CA:en
+# automatic
+^F = $(notdir $^)
+# environment
+SNAP_USER_COMMON = /home/dracken24/snap/code/common
+# makefile (from 'Makefile', line 323)
+LDLIBS = -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+# environment
+SNAP = /snap/code/97
+# environment
+INVOCATION_ID = c50fecd56f9040bd9de131995489c538
+# environment
+SNAP_REVISION = 97
+# environment
+SNAP_REAL_HOME = /home/dracken24
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = dracken24
+# environment
+GNOME_SETUP_DISPLAY = :1
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = dracken24
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+SNAP_ARCH = amd64
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 29)
+RAYLIB_API_VERSION = 300
+# environment
+SYSTEMD_EXEC_PID = 2369
+# environment
+DISPLAY = :0
+# environment
+USER = dracken24
+# environment
+GTK_MODULES = gail:atk-bridge
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+DISABLE_WAYLAND = 1
+# environment
+SNAP_DATA = /var/snap/code/97
+# environment
+SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
+# makefile (from 'Makefile', line 299)
+LDFLAGS = -L. -L$(RAYLIB_INSTALL_PATH) -L$(RAYLIB_RELEASE_PATH)
+# environment
+MANAGERPID = 2063
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4694
+# environment
+PAGER = less
+# makefile (from 'Makefile', line 146)
+EXAMPLE_RUNTIME_PATH = $(RAYLIB_RELEASE_PATH)
+# environment
+_ = /snap/code/97/usr/share/code/code
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 216)
+CFLAGS = -Wall -std=c++14 -D_DEFAULT_SOURCE -Wno-missing-braces -s -O1 -D_DEFAULT_SOURCE
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# makefile (from 'Makefile', line 382)
+MAKEFILE_PARAMS = $(PROJECT_NAME)
+# environment
+JOURNAL_STREAM = 8:40186
+# makefile (from 'Makefile', line 65)
+USE_WAYLAND_DISPLAY = FALSE
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/dracken24
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 57)
+BUILD_MODE = RELEASE
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-fa98f921-1.67.2-main.sock
+# environment
+SNAP_NAME = code
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+SNAP_VERSION = c3511e6c
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 54)
+RAYLIB_LIBTYPE = STATIC
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_COMMON = /var/snap/code/common
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 150)
+CC = g++
+# environment
+SNAP_USER_DATA = /home/dracken24/snap/code/97
+# environment
+XDG_MENU_PREFIX = gnome-
+# makefile (from 'Makefile', line 274)
+INCLUDE_PATHS = -I$(RAYLIB_H_INSTALL_PATH) -isystem. -isystem$(RAYLIB_PATH)/src -isystem$(RAYLIB_PATH)/release/include -isystem$(RAYLIB_PATH)/src/external
+# environment
+GDMSESSION = ubuntu
+# makefile (from 'Makefile', line 365)
+rwildcard = $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subst *,%,$2),$d))
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# variable set hash-table stats:
+# Load=153/1024=15%, Rehash=0, Collisions=10/304=3%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# /home/dracken24/Desktop/prog/gamedev/src: could not be stat'd.
+# src: could not be stat'd.
+# /opt/homebrew/include: could not be stat'd.
+# . (device 66308, inode 3280323): 15 files, no impossibilities.
+# /opt/homebrew/lib: could not be stat'd.
+
+# 15 files, no impossibilities in 5 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c
+#  recipe to execute (from 'Makefile', line 398):
+	$(CC) -c $< -o $@ $(CFLAGS) $(INCLUDE_PATHS) -D$(PLATFORM)
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+game: main.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 392):
+	$(CC) -o $(PROJECT_NAME)$(EXT) $(OBJS) $(CFLAGS) $(INCLUDE_PATHS) $(LDFLAGS) $(LDLIBS) -D$(PLATFORM)
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-02 20:16:49.581516228
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 407):
+	find -type f -executable | xargs file -i | grep -E 'x-object|x-archive|x-sharedlib|x-executable' | rev | cut -d ':' -f 2- | rev | xargs rm -fv
+	@echo Cleaning done
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all:
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+ 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  recipe to execute (from 'Makefile', line 388):
+	$(MAKE) $(MAKEFILE_PARAMS)
+
+# Not a target:
+main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/25=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 30 / storage = 339 B / avg = 11 B
+# current buf: size = 8162 B / used = 339 B / count = 30 / avg = 11 B
+
+# strcache performance: lookups = 42 / hit rate = 28%
+# hash-table stats:
+# Load=30/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Thu May 19 11:48:35 2022
+
+ 
