@@ -1,10 +1,8 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
 make game
 make[1]: Entering directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
+make[1]: 'game' is up to date.
 make[1]: Leaving directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
 make: Leaving directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
  
-make[1]: *** No rule to make target 'main.c', needed by 'game'.
-make: *** [Makefile:388: all] Error 2
-

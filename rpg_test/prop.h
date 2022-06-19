@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 15:08:33 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/05/06 23:22:27 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/06/19 17:08:30 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ public:
 
 private:
     Texture2D texture{LoadTexture("test_collision.png")};
-    Vector2 world_pos{};
+    Vector2 world_pos{0.0f, 0.0f};
     float scale{1.75f};
 };
 
