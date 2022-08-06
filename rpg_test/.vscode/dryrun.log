@@ -1,8 +1,10 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
+ 
 make game
 make[1]: Entering directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
-make[1]: 'game' is up to date.
+ 
+g++ -o game main.cpp character.cpp prop.cpp -Wall -std=c++14 -D_DEFAULT_SOURCE -Wno-missing-braces -s -O1 -D_DEFAULT_SOURCE -I/usr/local/include -isystem. -isystem/home/dracken24/Desktop/prog/gamedev/src -isystem/home/dracken24/Desktop/prog/gamedev/release/include -isystem/home/dracken24/Desktop/prog/gamedev/src/external -L. -L/usr/local/lib -L/home/dracken24/Desktop/prog/gamedev/src -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -DPLATFORM_DESKTOP
 make[1]: Leaving directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
 make: Leaving directory '/home/dracken24/Desktop/prog/gamedev/rpg_test'
  
