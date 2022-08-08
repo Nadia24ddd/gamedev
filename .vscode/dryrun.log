@@ -1,0 +1,16 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/dracken24/Desktop/prog/gamedev'
+ 
+make game
+ 
+make[1]: Entering directory '/home/dracken24/Desktop/prog/gamedev'
+ 
+make[1]: *** No rule to make target 'main.cpp', needed by 'game'.
+make[1]: *** No rule to make target 'character.cpp', needed by 'game'.
+make[1]: *** No rule to make target 'prop.cpp', needed by 'game'.
+
+make: *** [Makefile:388: all] Error 2
+
+make[1]: Leaving directory '/home/dracken24/Desktop/prog/gamedev'
+make: Leaving directory '/home/dracken24/Desktop/prog/gamedev'
+ 
